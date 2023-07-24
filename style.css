@@ -1,0 +1,158 @@
+body{
+    background-color: rgb(170, 220, 240);
+}
+
+.flexbox{
+    background-color: rgb(50, 63, 182);
+    text-align:center;
+    color:antiquewhite;
+    margin-right: 15%;
+    margin-left: 15%;
+    border-radius: 5px;
+}
+
+.conteudo{
+    
+    text-align:center;
+    color:antiquewhite;
+    margin-right: 25%;
+    margin-left: 25%;
+    border-radius: 5px;
+}
+
+.pink{
+    background-color: rgb(167, 42, 90);
+}
+
+.blue{
+    background-color:rgb(45, 105, 85)
+}
+
+.yellow{
+    background-color: rgb(209, 154, 3);
+}
+
+.purple{
+    background-color:rgb(111, 31, 148)
+}
+
+.orange{
+    background-color: rgb(190, 65, 7);
+}
+/*display--------------------------------------------------------------------------------------*/
+section{
+    border: solid black 2px;
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-item{
+    flex:1;
+}
+
+/*flex-wrap------------------------------------------------------------------------------------------*/
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.nowrap{
+    flex-wrap: nowrap;
+}
+
+.item{
+    background-color:antiquewhite;
+    color: purple;
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+}
+
+/*flex-direction-------------------------------------------------------------------------------*/
+.row{
+    flex-direction: row;
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.column-reverse{
+    flex-direction: column-reverse;
+}
+
+/*jusity-content--------------------------------------------------------------------------------*/
+
+.start{
+    justify-content: flex-start;
+}
+
+.end{
+    justify-content: flex-end;
+}
+
+.center{
+    justify-content: center;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.around{
+    justify-content: space-around;
+}
+
+/*align-items-------------------------------------------------------------------------------------*/
+
+.align-items-center{
+    align-items: center;
+}
+
+.stretch{
+    align-items: stretch;
+}
+
+.flex-start{
+    align-items: flex-start;
+}
+
+.center-center{
+    align-items: center;
+    justify-content: center;
+    height: 200px
+}
+
+/*align-content-----------------------------------------------------------------------------------------------------*/
+
+.align-between{
+    align-content: space-between;
+
+    height: 200px;
+}
+
+.align-around{
+    align-content: space-around;
+    height: 200px;
+}
+
+/*paragrafo-----------------------------------------------------------------------------------*/
+p{
+    font-size: 20px;
+    margin: 0;
+}
+
+.p{
+    font-size: 20px;
+    padding: 10px;
+    text-align:justify;
+}

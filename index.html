@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <link type="text/css" href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!--titulo-->
+    <div class="flexbox">
+        <h1>Flexbox!</h1>
+        <p>Como usar o flexbox?
+        </p>
+    </div><br/>
+
+    <!--display------------------------------------------------------------------------------------------------->
+    <div class="conteudo  pink">
+        <h1>display: flex</h1>
+        <p class="p">Define o elemento como flex container e transforma todos os seus filhos diretos em flex items, 
+            serve para organizar melhor os items na sua página web, e alinha os elementos horizontalmente.<br/><br/> Exemplo:
+        </p>
+
+        <h3>display: block</h3>
+        <p>Fica um embaixo do outro</p>
+        <section class="container">
+            <div class="item">item 1</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+        </section>
+
+        <h3>display: flex</h3>
+        <p>Fica um do lado do outro</p>
+        <section class="container flex">
+            <div class="item">item 1</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+        </section>
+        <br/>
+    </div>
+
+    <!--flex-direction------------------------------------------------------------------------------------------------>
+
+    <div class="conteudo blue">
+        <h1>flex-direction</h1>
+        <p class="p">Serve pra definir a direção dos itens, por padrão, os flex itens são row(linha). Mas dá 
+            pra mudar pra coluna e também mudar a ordem, colocar do fim pro começo.
+        </p>
+
+        <h3>flex-direction: row</h3>
+        <p>Fica um do lado do outro</p>
+        <section class="container flex row">
+            <div class="item">item 1</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+        </section>
+
+        <h3>flex-direction: row-reverse</h3>
+        <p>Fica um do lado do outro, de trás pra frente</p>
+        <section class="container flex row-reverse">
+            <div class="item">item 1</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+        </section>
+
+        <h3>flex-direction: column</h3>
+        <p>Fica em coluna</p>
+        <section class="container flex column">
+            <div class="item">item 1</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+        </section>
+
+        <h3>flex-direction: column-reverse</h3>
+        <p>Fica em coluna, ao contrário</p>
+        <section class="container flex column-reverse">
+            <div class="item">item 1</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+        </section> <br/>
+    </div>
+
+    <!--Flex-wrap---------------------------------------------------------------------------------------------------->
+
+    <div class="conteudo yellow">
+        <h1>flex-wrap</h1>
+        <p class="p">Serve para dizer se os itens devem ou não quebrar 
+            as linhas. por padrão eles não quebram, mas com essa propriedade, quando o elemento chega no limite do 
+            conteúdo, ele pula pra linha de baixo.
+        </p>
+
+        <h3>flex-wrap: nowrap</h3>
+        <p>Os itens continuam em linha reta mesmo atingindo o limite do conteúdo.
+        </p>
+        <section class="container flex nowrap">
+            <div class="item">item 1</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item">item 5</div>
+            <div class="item">item 6</div>
+            <div class="item">item 7</div>
+            <div class="item">item 8</div>
+            <div class="item">item 9</div>
+            <div class="item">item 10</div>
+        </section>
+
+        <h3>flex-wrap: wrap</h3>
+        <p>Faz com que ao chegar no limite, pule pra linha de baixo.
+        </p>
+        <section class="container flex flex-wrap">
+            <div class="item">item 1</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item">item 5</div>
+            <div class="item">item 6</div>
+            <div class="item">item 7</div>
+            <div class="item">item 8</div>
+            <div class="item">item 9</div>
+            <div class="item">item 10</div>
+            <div class="item">item 11</div>
+        </section> <br/>
+    </div>
+
+    <!--Justify-content-------------------------------------------------------------------------------------------------->
+    <div class="conteudo purple">
+        <h1>justify-content</h1>
+        <p class="p">Serve pra alinhar os itens dentro do container, na esquerda, direita, centro...
+        </p>
+
+        <h3>justify-content: flex-start</h3>
+        <p>Alinha no começo (na esquerda).
+        </p>
+        <section class="container flex start">
+            <div class="item">item 1</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+        </section>
+
+        <h3>justify-content: flex-end</h3>
+        <p>Alinha no final (na direita).
+        </p>
+        <section class="container flex end">
+            <div class="item">item 1</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+        </section>
+
+        <h3>justify-content: center</h3>
+        <p>Alinha no centro.
+        </p>
+        <section class="container flex center">
+            <div class="item">item 1</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+        </section>
+
+        <h3>justify-content: space-between</h3>
+        <p>Alinha ocupando todo o espaço.
+        </p>
+        <section class="container flex between">
+            <div class="item">item 1</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+        </section>
+
+        <h3>justify-content: space-around</h3>
+        <p>Alinha desse jeito aí.
+        </p>
+        <section class="container flex around">
+            <div class="item">item 1</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+        </section>
+
+        <br/>
+    </div>
+
+    <!--align-items---------------------------------------------------------------------------------------------------->
+    
+    <div class="conteudo orange">
+        <h1>align-items</h1>
+        <p class="p">Serve pra alinhar os itens de acordo com o eixo do container.
+        </p>
+
+        <h3>align-items: center (vertical)</h3>
+        <p>Alinha no centro verticalmente, se estiver em coluna.
+        </p>
+        <section class="container flex column align-items-center">
+            <div class="item">item 1</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+        </section>
+
+        <h3>align-items: center (horizontal)</h3>
+        <p>Alinha no centro desse jeito aí, se estiver em linha.
+        </p>
+        <section class="container flex align-items-center">
+            <div class="item">1</div>
+            <div class="item">item 2</div>
+            <div class="item">este é o<br/> item 3</div>
+            <div class="item">Agora esse<br/> último item<br/> é o item 4</div>
+        </section>
+
+        <h3>align-items: flex-start</h3>
+        <p>Alinha no início (esquerda), se estiver em coluna.
+        </p>
+        <section class="container flex column flex-start">
+            <div class="item">1</div>
+            <div class="item">item 2</div>
+            <div class="item">este é o<br/> item 3</div>
+            <div class="item">Agora esse<br/> último item<br/> é o item 4</div>
+        </section>
+
+        <h3>align-items: stretch</h3>
+        <p>Todos ficam da mesma altura.
+        </p>
+        <section class="container flex stretch">
+            <div class="item">1</div>
+            <div class="item">item 2</div>
+            <div class="item">este é o<br/> item 3</div>
+            <div class="item">Agora esse<br/> último item<br/> é o item 4</div>
+        </section>
+
+        <h3>align-items: center e justify-content: center</h3>
+        <p>Fica no meio 
+        </p>
+        <section class="container flex column center-center">
+            <div class="item">Item no meio</div>
+        </section>
+
+        <br/>
+    </div>
+
+    <!--align-content--------------------------------------------------------------------------------------------------->
+    <div class="conteudo pink">
+        <h1>align-content</h1>
+        <p class="p">Serve pra alinhar os itens verticalmente.
+        </p>
+
+        <h3>align-content: space-between</h3>
+        <p>Alinha ocupando início e o fim.
+        </p>
+        <section class="container flex flex-wrap align-between">
+            <div class="item">item 1</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item">item 5</div>
+            <div class="item">item 6</div>
+            <div class="item">item 7</div>
+            <div class="item">item 8</div>
+            <div class="item">item 9</div>
+            <div class="item">item 10</div>
+        </section>
+
+        <h3>align-content: space-around</h3>
+        <p>Alinha desse jeito.
+        </p>
+        <section class="container flex flex-wrap align-around">
+            <div class="item">item 1</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item">item 5</div>
+            <div class="item">item 6</div>
+            <div class="item">item 7</div>
+            <div class="item">item 8</div>
+            <div class="item">item 9</div>
+            <div class="item">item 10</div>
+        </section>
+
+        <br/>
+    </div>
+
+</body>
+</html>
